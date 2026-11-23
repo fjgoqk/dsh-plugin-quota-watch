@@ -1,0 +1,35 @@
+{
+  "name": "dsh-plugin-quota-watch",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Live Codex quota (5-hour window and weekly) and DeepSeek API balance with daily spend history in the composer dock",
+  "license": "MIT",
+  "author": "fjgoqk",
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "quota", "codex", "deepseek", "balance"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fjgoqk/dsh-plugin-quota-watch.git"
+  },
+  "homepage": "https://github.com/fjgoqk/dsh-plugin-quota-watch#readme",
+  "bugs": {
+    "url": "https://github.com/fjgoqk/dsh-plugin-quota-watch/issues"
+  },
+  "engines": { "node": ">=20" },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml", "locale/*.json", "docs", "icon.svg", "README.md", "LICENSE"],
+  "dsh": {
+    "engines": { "dsh": ">=0.2.2-rc.3 <0.3.0" },
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}

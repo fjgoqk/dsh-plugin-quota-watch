@@ -1,0 +1,6 @@
+# dsh-plugin-quota-watch bundle patch: one row mounts both halves — the host
+# side (Codex usage + DeepSeek balance polling and /api/quota-watch routes)
+# and the browser side (the composer-dock chip served from ./client).
+- insert:
+    - id: quota-watch
+      name: 'dsh-plugin-quota-watch'

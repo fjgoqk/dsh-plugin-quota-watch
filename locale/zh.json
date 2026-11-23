@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "额度看板",
+    "description": "在输入框下方实时显示 Codex 剩余额度（5 小时窗口与周窗口）和 DeepSeek API 余额。由本机 Host 定时拉取官方接口，密钥不出本机。",
+    "detail": "docs/DETAIL.md"
+  }
+}

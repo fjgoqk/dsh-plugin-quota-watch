@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Quota watch",
+    "description": "Live Codex quota (5-hour window and weekly) and DeepSeek API balance in a compact chip under the composer. The host polls the official endpoints locally; secrets never leave the machine.",
+    "detail": "docs/DETAIL.md"
+  }
+}
